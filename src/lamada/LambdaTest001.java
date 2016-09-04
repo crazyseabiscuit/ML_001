@@ -12,6 +12,10 @@ public class LambdaTest001 {
         test001.simple_tst();
         System.out.println("end of simple test");
 
+        System.out.println("start of collection sort test");
+        test001.collection_sort_test();
+        System.out.println("End of collection sort test");
+
 
     }
 
@@ -34,4 +38,23 @@ public class LambdaTest001 {
 
         players.forEach(System.out::println);
     }
+
+
+    private void collection_sort_test(){
+        String[] players = {"Rafael Nadal", "Novak Djokovic",
+                "Stanislas Wawrinka", "David Ferrer",
+                "Roger Federer", "Andy Murray",
+                "Tomas Berdych", "Juan Martin Del Potro",
+                "Richard Gasquet", "John Isner"};
+
+        Arrays.sort(players,(String s1,String s2) -> s1.compareTo(s2));
+        for (int i = 0; i < players.length; i++) {
+            System.out.println(players[i]);
+
+        }
+
+
+    }
+
+
 }
