@@ -10,6 +10,7 @@ public class LambdaTest001 {
     public static void main(String[] args) {
         LambdaTest001 test001 = new LambdaTest001();
         test001.simple_tst();
+        System.out.println("end of simple test");
 
 
     }
